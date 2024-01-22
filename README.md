@@ -12,6 +12,7 @@
 
   Upon completion of this exercise, you will be able to:
 
+  - Run JavaScript code from your IDE, using a local server to load it in the browser
   - Perform basic mathematical calculations using arithmetic operators
   - Assign values to variables using assignment operators (`=`, `+=`, `-=`, etc.)
   - Use string concatenation (`+`) or interpolation `${}` to join strings together
