@@ -9,10 +9,11 @@ const s5 = "and";
 
 // Concatenate the string variables into one new string
 
+let tongueTwister = `${s1} ${s2} ${s3} ${s4} ${s5} ${s3} ${s2} ${s1} ${s4}`;
 
 // Print out the concatenated string
 
-
+console.log(tongueTwister);
 
 
 /*******************************************
@@ -23,10 +24,13 @@ const part2 = "script";
 
 // Convert the last letter of part1 and part2 to uppercase and concatenate the strings
 
+const lastCharUppercased1 = part1[part1.length - 1].toUpperCase()
+const lastCharUppercased2 = part2[part2.length - 1].toUpperCase()
+const camelTail = part1.slice(0, part1.length - 1) + lastCharUppercased1 + part2.slice(0, part2.length - 1) + lastCharUppercased2;
 
 // Print the cameLtaiL-formatted string
 
-
+console.log(camelTail);
 
 
 /*******************************************
@@ -36,10 +40,11 @@ const billTotal = 84;
 
 // Calculate the tip (15% of the bill total)
 
+let tipAmount = billTotal * 0.15;
 
 // Print out the tipAmount
 
-
+console.log(tipAmount);
 
 
 /*******************************************
@@ -48,10 +53,11 @@ const billTotal = 84;
 
 // Generate a random integer between 1 and 10 (inclusive)
 
+let randomNumber = Math.floor(Math.random() * 10) + 1;
 
 // Print the generated random number
 
-
+console.log(randomNumber);
 
 /*******************************************
     Iteration 3.1 | Booleans
@@ -61,16 +67,16 @@ const a = true;
 const b = false;
 
 // Try and guess the output of the below expressions first and write your answers down:
-const expression1 = a && b;
+const expression1 = a && b; //false
 
-const expression2 = a || b;
+const expression2 = a || b; //true
 
-const expression3 = !a && b;
+const expression3 = !a && b; //false
 
-const expression4 = !(a && b);
+const expression4 = !(a && b); //true
 
-const expression5 = !a || !b;
+const expression5 = !a || !b; //true
 
-const expression6 = !(a || b);
+const expression6 = !(a || b); //false
 
-const expression7 = a && a;
+const expression7 = a && a; //true
